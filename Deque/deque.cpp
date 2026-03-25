@@ -1,4 +1,7 @@
 /*Unlike the vectors, deques allow insertion and deletion of elements from both ends.
+Important thing to note is that deque are referred to as Double - ended - queues and
+Dequeues are generic words that are usually used to pop an element from a queue 
+but in C++ STL deque is a container that allows fast insertion and deletion at both ends.
 Some of the common operations on deques are:
 - push_front(): Inserts an element at the beginning of the deque.
 - push_back(): Inserts an element at the end of the deque.
@@ -8,6 +11,13 @@ Some of the common operations on deques are:
 - back(): Returns the last element of the deque.
 - size(): Returns the number of elements in the deque.
 - erase(): Removes elements from the deque at a specified position or range.
+Important point: Deque are internally implemented as dynamic arrays whereas that can grow
+ and shrink in size during runtime. They 
+are designed to provide fast insertionand deletion at both ends, 
+making them suitable for scenarios where elements need to be added or removed from 
+both the front and back of the container. Deques are often used in situations where a 
+queue-like structure is needed but with the flexibility of adding or removing elements 
+from both ends.These can be randomly accessed.
 */
 #include<bits/stdc++.h>
 using namespace std;
