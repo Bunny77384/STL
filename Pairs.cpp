@@ -18,6 +18,11 @@ int main()
 
     //Pairs in vectors
     vector<pair<int, int>> v= {{1,2}, {3,4},{5,6}};
+    //Pushing a pair into thhe vector
+    v.push_back({7,8});//in case of push back we need to give the pair in the 
+    //form of an initializer list
+    v.emplace_back(9,10);//creates an in-place object pairs
+    //In case of emplace back we can directly give the values of the pair as it will create the pair itself
     cout<<"Elements of the vector of pairs: "<<endl;
     for(auto p: v)
     {
